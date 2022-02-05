@@ -14,7 +14,7 @@ Antes de iniciar el servidor, colocar en el archivo 'productos.txt' tres product
 
 const express = require("express");
 
-import Contenedor from "./contenedor.js";
+Contenedor = require("./contenedor.js");
 
 // Creando el servidor
 const app = express(); //instanciar express (para crear servidor express)
