@@ -1,7 +1,7 @@
-promises = require("fs");
+const fs = require("fs");
 
 const readProducts = async () => {
-  let file = await promises.readFile("./productos.txt", "utf-8");
+  let file = fs.promises.readFile("./productos.txt", "utf-8");
   return file;
 };
 module.exports = class Contenedor {
